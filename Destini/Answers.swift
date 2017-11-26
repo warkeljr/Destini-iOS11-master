@@ -3,7 +3,7 @@
 //  Destini
 //
 //  Created by W.S. van Arkel jr. on 25-11-17.
-//  Copyright © 2017 London App Brewery. All rights reserved.
+//  Copyright © 2017 warcom. All rights reserved.
 //
 
 import Foundation

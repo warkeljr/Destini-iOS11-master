@@ -21,12 +21,8 @@ class ViewController: UIViewController {
     
     var storyIndex : Int = 1
     
-    let story1 = DataserviceStories().storyBank[0]
-    let story2 = DataserviceStories().storyBank[1]
-    let story3 = DataserviceStories().storyBank[2]
-    let story4 = DataserviceStories().storyBank[3]
-    let story5 = DataserviceStories().storyBank[4]
-    let story6 = DataserviceStories().storyBank[5]
+    let story = DataserviceStories().storyBank
+
     
     let answer1 = DataserviceAnswers().answerBank[0]
     let answer2 = DataserviceAnswers().answerBank[1]
@@ -39,7 +35,6 @@ class ViewController: UIViewController {
         // TODO Step 3: Set the text for the storyTextView, topButton, bottomButton, and to T1_Story, T1_Ans1, and T1_Ans2
         
         newRound()
-        
         
     }
     
@@ -87,6 +82,7 @@ class ViewController: UIViewController {
     }
     
     func newRound() {
+        let story1 =  story[0]
         storyTextView.text = story1.story
         topButton.isHidden = false
         topButton.setTitle(answer1.answerA, for: .normal)
@@ -99,6 +95,7 @@ class ViewController: UIViewController {
     }
     
     func story2Choice() {
+        let story2 = story[1]
         storyTextView.text = story2.story
         topButton.setTitle(answer2.answerA, for: .normal)
         bottomButton.setTitle(answer2.answerB, for: .normal)
@@ -109,6 +106,7 @@ class ViewController: UIViewController {
     }
     
     func story3Choice() {
+        let story3 = story[2]
         storyTextView.text = story3.story
         topButton.setTitle(answer3.answerA, for: .normal)
         bottomButton.setTitle(answer3.answerB, for: .normal)
@@ -119,6 +117,7 @@ class ViewController: UIViewController {
     }
     
     func story4Choice() {
+        let story4 = story[3]
         storyTextView.text = story4.story
         topButton.isHidden = true
         bottomButton.isHidden = true
@@ -131,6 +130,7 @@ class ViewController: UIViewController {
     }
     
     func story5Choice() {
+        let story5 = story[4]
         storyTextView.text = story5.story
         topButton.isHidden = true
         bottomButton.isHidden = true
@@ -143,6 +143,7 @@ class ViewController: UIViewController {
     }
     
     func story6Choice() {
+        let story6 = story[5]
         storyTextView.text = story6.story
         topButton.isHidden = true
         bottomButton.isHidden = true
